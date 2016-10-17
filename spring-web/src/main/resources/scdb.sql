@@ -8,8 +8,6 @@ CREATE TABLE items (
   PRIMARY KEY (id)
 )  DEFAULT CHARSET=utf8;
 
-/*Table structure for table `orderdetail` */
-
 CREATE TABLE orderdetail (
   id INT NOT NULL AUTO_INCREMENT,
  orders_id INT NOT NULL COMMENT '订单id',
