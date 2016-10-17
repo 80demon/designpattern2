@@ -30,4 +30,18 @@ public class OrdersCustom extends Orders {
 		this.address = address;
 	}
 
+	@Override
+	public String toString() {
+		return "OrdersCustom [username=" + username + ", sex=" + sex
+				+ ", address=" + address + ", getId()=" + getId()
+				+ ", getUserid()=" + getUserid() + ", getNumber()="
+				+ getNumber() + ", getCreateTime()=" + getCreateTime()
+				+ ", getNote()=" + getNote() + ", getUser()=" + getUser()
+				+ ", getOrderdetails()=" + getOrderdetails() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + "]";
+	}
+
+
+
 }

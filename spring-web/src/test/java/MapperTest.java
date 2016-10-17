@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.junit.Test;
@@ -20,6 +21,11 @@ public class MapperTest {
 	public void testSercvice() {
 		List<OrdersCustom> cusList = new ArrayList<OrdersCustom>();
 		cusList = orderService.findOrdersUser();
+		for (Iterator iterator = cusList.iterator(); iterator.hasNext();) {
+			OrdersCustom ordersCustom = (OrdersCustom) iterator.next();
+			System.out.println(ordersCustom);
+
+		}
 		System.out.println(cusList);
 	}
 
