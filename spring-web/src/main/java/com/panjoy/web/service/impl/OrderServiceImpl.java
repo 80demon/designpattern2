@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.panjoy.web.dao.OrdersCustomMapper;
+import com.panjoy.web.domain.Orders;
 import com.panjoy.web.domain.OrdersCustom;
 import com.panjoy.web.service.OrderService;
 
@@ -18,6 +19,12 @@ public class OrderServiceImpl implements OrderService {
 	public List<OrdersCustom> findOrdersUser() {
 		// TODO Auto-generated method stub
 		return ordersCustomMapper.findOrdersUser();
+	}
+
+	@Override
+	public List<Orders> findOrdersUserResultMap() {
+		// TODO Auto-generated method stub
+		return ordersCustomMapper.findOrdersUserResultMap();
 	}
 
 }

@@ -1,3 +1,5 @@
+package com.panjoy.web.test;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.panjoy.web.domain.Orders;
 import com.panjoy.web.domain.OrdersCustom;
 import com.panjoy.web.service.OrderService;
 
@@ -29,4 +32,10 @@ public class MapperTest {
 		System.out.println(cusList);
 	}
 
+	@Test
+	public void testResultMap() {
+		List<Orders> ordersList = new ArrayList<Orders>();
+		ordersList = orderService.findOrdersUserResultMap();
+		System.out.println(ordersList);
+	}
 }
